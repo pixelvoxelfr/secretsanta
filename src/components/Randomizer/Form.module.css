@@ -1,0 +1,10 @@
+form {
+   width: 35%;
+   display: flex;
+   flex-flow: column;
+   gap: 10px;
+}
+
+textarea {
+   padding: 5px;
+}
