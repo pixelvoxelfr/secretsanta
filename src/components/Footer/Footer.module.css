@@ -1,0 +1,8 @@
+footer {
+   display: flex;
+   flex-flow: column wrap;
+   align-items: center;
+   justify-content: center;
+   gap: 5px;
+   padding-top: 20px;
+}

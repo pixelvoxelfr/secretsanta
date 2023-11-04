@@ -1,3 +1,8 @@
 body {
    background-image: url(../images/pattern.png), linear-gradient(90deg, #191b1f, #08070c);
+   color: white;
+}
+
+a {
+   color: white;
 }

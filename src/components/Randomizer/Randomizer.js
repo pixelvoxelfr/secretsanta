@@ -13,7 +13,6 @@ function Randomizer() {
 
   return (
     <div className={classes.randomizer}>
-      <div className={classes.divider}>WESH</div>
       <div className={classes.container}>
         <Form defineGifters={defineGifters} />
         <Results gifters={gifters} />

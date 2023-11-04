@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1 {
+  font-family: 'Bree Serif', serif;
+  font-family: 'Pacifico', cursive;
+  letter-spacing: 0.1rem;
+}

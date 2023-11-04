@@ -1,0 +1,9 @@
+.divider {
+   height: 100px;
+   width: 100%;
+   background-image: url(/src/assets/images/banderolle2.png);
+}
+
+.randombg {
+   background-position: random 0px 100px center;
+}

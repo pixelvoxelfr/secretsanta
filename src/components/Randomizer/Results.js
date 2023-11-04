@@ -1,34 +1,8 @@
 import React from "react";
 
+import classes from "./Results.module.css";
+
 function Results(props) {
-  //    const shuffle = (array) => {
-  //       let currentIndex = array.length, temporaryValue, randomIndex;
-
-  //       // While there remain elements to shuffle...
-  //       while (0 !== currentIndex) {
-
-  //           // Pick a remaining element...
-  //           randomIndex = Math.floor(Math.random() * currentIndex);
-  //           currentIndex -= 1;
-
-  //           // And swap it with the current element.
-  //           temporaryValue = array[currentIndex];
-  //           array[currentIndex] = array[randomIndex];
-  //           array[randomIndex] = temporaryValue;
-  //       }
-
-  //       return array;
-  //   }
-
-  //   gifters.forEach(gifter => {
-  //    while (gifters.indexOf(gifter) !== receivers.indexOf(gifter)) {
-  //       const indexOfGifter = gifters.indexOf(gifter);
-  //       const clearedGifters = gifters.splice(indexOfGifter, 1);
-  //       const random = Math.floor(Math.random() * (clearedGifters.length));
-  //       receivers.push(clearedGifters[random]);
-  //    }
-  //   })
-
   const gifters = [...props.gifters];
 
   function matchGifters(gifters) {
@@ -83,15 +57,24 @@ function Results(props) {
   const receiversChecked = checkMatching(receivers, gifters);
 
   return (
-    <div>
-      <p>TEST</p>
+    <div className={classes.results}>
+      <div className={classes.explanationside}>
+        <h1>Secret Santa Organizer</h1>
+        {gifters.length === 0 && (
+          <p>
+            Write down one person per line in the input on the left and click on
+            Randomize
+          </p>
+        )}
+      </div>
+
       <ul>
-         {gifters.length === 0 && <p>Write down one person per line on the input on the left and click on Validate</p>}
         {gifters.map((gifter, index) => {
           const receiver = receiversChecked[index];
           return (
             <li key={index}>
-              {gifter} gifts {receiver}
+              <span className={classes.gifter}>{gifter}</span> gifts{" "}
+              <span className={classes.gifter}>{receiver}</span>
             </li>
           );
         })}

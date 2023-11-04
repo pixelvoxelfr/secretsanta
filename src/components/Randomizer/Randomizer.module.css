@@ -1,16 +1,14 @@
 .randomizer{
-   width: 100%;
-}
-
-.divider {
-   height: 60px;
-   width: 100%;
-   background-color: blue;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
 }
 
 .container {
    padding: 20px;
+   width: 100%;
    display: flex;
    flex-flow: row wrap;
-   gap: 10px;
+   justify-content: center;
+   gap: 20px;
 }
