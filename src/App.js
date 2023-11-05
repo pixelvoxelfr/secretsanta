@@ -10,9 +10,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Divider random="0"/>
+      <Divider random="-10"/>
       <Randomizer />
-      <Divider random="385"/>
+      <Divider random="355"/>
       <Footer />
       <Snowfall />
     </div>

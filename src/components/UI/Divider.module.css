@@ -5,5 +5,12 @@
 }
 
 .randombg {
-   background-position: random 0px 100px center;
+   background-position: random 0px 130px center;
+}
+
+@media screen and (max-width: 710px) {
+   .divider {
+      height: 75px;
+      background-size: cover;
+   }
 }

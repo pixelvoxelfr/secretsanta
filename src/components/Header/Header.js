@@ -5,7 +5,7 @@ import classes from './Header.module.css';
 
 function Header() {
    return <header>
-      <img src={titleImage} alt="Secret Santa Organizer by PixelVoxel"/>      
+      <img src={titleImage} alt="Secret Santa Organizer by PixelVoxel" className={classes.logo}/>      
    </header>
 }
 
